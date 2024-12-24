@@ -2,7 +2,7 @@
 
 
 import { useState } from "react";
-import Navbar from "@/components/compon/Navbar";
+
 
 export default function Register() {
     const [username, setUsername] = useState('')
@@ -40,7 +40,7 @@ export default function Register() {
 
     return (
         <>
-            <div className="">
+            
               
                 <div>
 
@@ -58,6 +58,7 @@ export default function Register() {
                                 <label className="font-bold  font-serif " htmlFor="username"><i>UserName :</i></label>
                                 <input className="rounded py-0.5 p-2 text-black " type="text" id="username" placeholder="enter name" value={username} onChange={(e) => setUsername(e.target.value)} />
                             </div>
+
 
 
                             <div className="flex flex-col gap-1 ">
@@ -83,8 +84,7 @@ export default function Register() {
                         </div>
                     </form>
                 </div>
-             </div>
-
+             
         </>
     )
 
